@@ -1,0 +1,268 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  font-size: 18px;
+  background-color: #bc002d;
+  border-bottom: 7px solid #FCD116;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#main-nav {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+
+#main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.nav-links, #logo {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lato';
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 18px;
+  transition: 0.7s;
+  text-transform: uppercase;
+}
+
+.nav-links:hover {
+   color: #FCD116;
+}
+
+#logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+#navbar-toggle:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#gridContainer {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 120px;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#mainContainerBackground {
+  background-image: url("../images/main.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mainText, #menuText {
+  margin-top: 70px;
+  text-align: center;
+}
+
+#mainText span {
+  color: black;
+}
+
+#mainText h1, #menu h1 {
+  color: #bf6900;
+  font-family: 'Lato';
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 37px;
+  text-transform: uppercase;
+}
+
+#mainText h2, #menu h2 {
+  font-family: 'Lato';
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#miniContainer {
+  display: grid;
+  margin: auto;
+  margin-top: 70px;
+  width: 100%;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.miniItem {
+  width: 100%;
+}
+
+.miniHeader h1 {
+  background-color: red;
+  text-align: center;
+  color: white;
+  font-family: 'Lato';
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.miniBackground {
+  background-image: url("../images/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  overflow: hidden;
+}
+
+.miniBottomText {
+  color: black;
+  font-weight: 400px;
+  font-size:  12px;
+  font-family: 'Raleway';
+  letter-spacing: 3px;
+}
+
+#menuBackground {
+  background-image: url("../images/menu.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menuGrid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 70px;
+}
+
+#menuPicLeft {
+  background-image: url("../images/menu.jpg");
+  height: 300px;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+#menuPicRight {
+  background-image: url("../images/menu.jpg");
+  height: 300px;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid #bf6900;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button .active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+@media screen and (min-width: 991px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  #main-nav {
+    display: flex !important;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  #logo {
+    margin-top: 0;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+}
+
+@media(max-width: 991px){
+  #miniContainer {
+    grid-template-columns: 1fr;
+  }
+
+  #menuGrid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 70px;
+  }
+}
