@@ -23,13 +23,13 @@
         <a href="#" id="logo">Resturant Kunio</a>
         <ul id="main-nav">
             <li>
-                <a href="#" class="nav-links">Home</a>
+                <a href="#" class="nav-links" id="homeButton">Home</a>
             </li>
             <li>
-                <a href="#" class="nav-links">Menu</a>
+                <a href="#" class="nav-links" id="menuButton">Menu</a>
             </li>
             <li>
-                <a href="#" class="nav-links">Sushi À la carte</a>
+                <a href="#" class="nav-links" id="sushiButton">Sushi À la carte</a>
             </li>
             <li>
                 <a href="#" class="nav-links">Contact Us</a>
@@ -38,150 +38,326 @@
     </div>
 
     <div id="gridContainer">
-      <div id="mainContainer">
-        <div id="mainContainerBackground"></div>
-        <div id="mainText"><h1>Treat your family out to <span>healthy</span> and <span>delicious</span> Japanese cuisine</h1>
-          <h2>Tired of cooking every night and can't think of any new dishes to whip up? Take a night off and bring your loved ones to Restaurant Kunio. We are a family-friendly restaurant so your entire family is welcome!</h2>
+        <div id="mainContainer">
+            <div id="mainContainerBackground"></div>
+            <div id="mainContainerStretch">
+            <div id="mainText">
+                <h1>Treat your family out to <span>healthy</span> and <span>delicious</span> Japanese cuisine</h1>
+                <h2>Tired of cooking every night and can't think of any new dishes to whip up? Take a night off and bring your loved ones to Restaurant Kunio. We are a family-friendly restaurant so your entire family is welcome!</h2>
+            </div>
+            <div id="miniContainer">
+                <div class="miniItem">
+                    <div class="miniHeader">
+                        <h1>All the classics</h1>
+                    </div>
+                    <div class="miniBackground"></div>
+                    <div class="miniBottomText">
+                        <h2>Restaurant Kunio serves all the classic Japanese dishes, such as sushi and udon</h2>
+                    </div>
+                </div>
+                <div class="miniItem">
+                    <div class="miniHeader">
+                        <h1>Fresh seafood</h1>
+                    </div>
+                    <div class="miniBackground"></div>
+                    <div class="miniBottomText">
+                        <h2>We have the best Japanese cuisine and sushi on the islands. We get fresh fish daily!</h2>
+                    </div>
+                </div>
+                <div class="miniItem">
+                    <div class="miniHeader">
+                        <h1>Open all week</h1>
+                    </div>
+                    <div class="miniBackground"></div>
+                    <div class="miniBottomText">
+                        <h2>Our restaurant is open all week long from 10:30 AM to 10:00 PM every day! Come join us!</h2>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div id="miniContainer">
-          <div class="miniItem">
-            <div class="miniHeader"><h1>All the classics</h1></div>
-            <div class="miniBackground"></div>
-            <div class="miniBottomText"><h2>Restaurant Kunio serves all the classic Japanese dishes, such as sushi and udon</h2></div>
-          </div>
-          <div class="miniItem">
-            <div class="miniHeader"><h1>Fresh seafood</h1></div>
-            <div class="miniBackground"></div>
-            <div class="miniBottomText"><h2>We have the best Japanese cuisine and sushi on the islands. We get fresh fish daily!</h2></div>
-          </div>
-          <div class="miniItem">
-            <div class="miniHeader"><h1>Open all week</h1></div>
-            <div class="miniBackground"></div>
-            <div class="miniBottomText"><h2>Our restaurant is open all week long from 10:30 AM to 10:00 PM every day! Come join us!</h2></div>
+
+        <div id="menu">
+            <div id="menuBackground"></div>
+            <div id="menuStretch">
+            <div id="menuText">
+                <h1>MENU</h1>
+                <h2>If you love Japanese food and fresh fish, Restaurant Kunio is the place to go. We have lunch specials available to order. Be sure to try our famous Funamori boat — it's tons of fun for everyone, and delicious too!</h2>
+            </div>
+            <div id="menuGrid">
+                <div id="menuPicLeft"></div>
+                <div id="menuPicRight"></div>
+                <div id="menuAccordion">
+                  <h1>OUR MENU</h1>
+                    <button class="accordion">À la carte</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor si consequat.</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Combination Meals</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Hot Noodles</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Cold Noodles</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Donburi</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Nabemono</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Teishoku</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Lobster Combinations</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Funamori Party Boat</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Kunio Special Triple Meals</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Extras</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Salads</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Soups</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Dessert</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+
+                    <button class="accordion">Keiki Meals</button>
+                    <div class="panel">
+                        <p>Lorem .</p>
+                        <p>Lorem ipsum dolor si consequat.</p>
+                    </div>
+                </div>
+                <div id="menuRightGrid">
+                    <div class="rightGridItem">
+                        <h2>Visiting our restaurant will never be a headache. We have plenty of FREE parking so you'll get dinner quickly!</h2>
+                    </div>
+                    <div class="rightGridItem">
+                        <div class="miniBackground"></div>
+                        <div class="miniBottomText">
+                            <h2>Order our dishes a la carte to get your favorite foods to share with everyone.</h2>
+                        </div>
+                    </div>
+                    <div class="rightGridItem">
+                        <div class="miniBackground"></div>
+                        <div class="miniBottomText">
+                            <h2>Our hot and cold noodle dishes are healthy and packed full of flavor. Try one today!</h2>
+                        </div>
+                    </div>
+                    <div class="rightGridItem">
+                        <div class="miniBackground"></div>
+                        <div class="miniBottomText">
+                            <h2>Our donburi choices are reminiscent of tasty home-cooked meals.
+
+                            </h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="menu">
-        <div id="menuBackground"></div>
-        <div id="menuText">
-          <h1>MENU</h1>
-          <h2>If you love Japanese food and fresh fish, Restaurant Kunio is the place to go. We have lunch specials available to order. Be sure to try our famous Funamori boat — it's tons of fun for everyone, and delicious too!</h2>
-        </div>
-        <div id="menuGrid">
-          <div id="menuPicLeft"></div>
-          <div id="menuPicRight"></div>
-          <div id="menuAccordion">
-            <button class="accordion">À la carte</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor si consequat.</p>
-              <p>Lorem ipsum dolor si consequat.</p>
+        <div id="sushiAla">
+            <div id="sushiAlaBackground"></div>
+            <div id="sushiStretch">
+            <div id="sushiText">
+                <h1>Eat your <span>fill</span> of sushi</h1>
+                <h2>Tired of cooking every night and can't think of any new dishes to whip up? Take a night off and bring your loved ones to Restaurant Kunio. We are a family-friendly restaurant so your entire family is welcome!</h2>
             </div>
+            <div id="alaContainer">
+              <div id="sushiPicLeft"></div>
+              <div id="sushiPicRight"></div>
+                <div id="alaLeftGrid">
+                    <div class="rightGridItem">
+                        <h2>Restaurant Kunio offers the best Japanese cuisine in all of Hawaii. We're open all week from Monday to Sunday!</h2>
+                    </div>
+                    <div class="rightGridItem">
+                        <div class="miniBackground"></div>
+                        <div class="miniBottomText">
+                            <h2>Tuna sushi is a popular type of sushi, known for its characteristic of dark redness. If you've never had sushi before, this is a great place to start. It's popular for a reason!</h2>
+                        </div>
+                    </div>
+                    <div class="rightGridItem">
+                        <div class="miniBackground"></div>
+                        <div class="miniBottomText">
+                            <h2>If you don't really like fish but still enjoy sushi, California rolls are a good choice. They are filled with avocado, cucumber, and synthetic crab meat. These are also very popular!</h2>
+                        </div>
+                    </div>
+                    <div class="rightGridItem">
+                        <div class="miniBackground"></div>
+                        <div class="miniBottomText">
+                            <h2>Take a break from cooking tonight. Bring the entire family out!</h2>
+                        </div>
+                    </div>
 
-            <button class="accordion">Combination Meals</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                </div>
+                <div id="alaRight">
+                  <div id="sushiAccordion">
+                    <h1>SUSHI À la carte</h1>
+                      <button class="accordion">Albacore</button>
+                      <div class="panel">
+                          <p>Lorem ipsum dolor si consequat.</p>
+                      </div>
 
-            <button class="accordion">Hot Noodles</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Marbled Tuna</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Cold Noodles</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Tuna</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Donburi</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Yellowtail</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Nabemono</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Squid</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Teishoku</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Halibut</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Lobster Combinations</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Giant Clam</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Funamori Party Boat</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Sweet Shrimp</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Kunio Special Triple Meals</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Red Snapper</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Extras</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Freshwater Eel</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Salads</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Saltwater Eel</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Soups</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Salmon</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Dessert</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
-            </div>
+                      <button class="accordion">Mackerel</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
 
-            <button class="accordion">Keiki Meals</button>
-            <div class="panel">
-              <p>Lorem .</p>
-              <p>Lorem ipsum dolor si consequat.</p>
+                      <button class="accordion">Egg</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+
+                      <button class="accordion">Shrimp</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">Tuna Roll</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">Salmon Skin Roll</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">California Roll</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">Salmon Roe</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">Sea Urchin</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">Spicy Scallop</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">Cucumber Roll</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                      <button class="accordion">Spicy Tuna Roll</button>
+                      <div class="panel">
+                          <p>Lorem .</p>
+                      </div>
+                  </div>
+
+                </div>
             </div>
           </div>
-          <div id="menuRightGrid">
-            <div class="rightGridItem"><h2>Visiting our restaurant will never be a headache. We have plenty of FREE parking so you'll get dinner quickly!</h2></div>
-            <div class="rightGridItem">
-              <div class="miniBackground"></div>
-              <div class="miniBottomText"><h2>Order our dishes a la carte to get your favorite foods to share with everyone.</h2></div>
-            </div>
-            <div class="rightGridItem">
-              <div class="miniBackground"></div>
-              <div class="miniBottomText"><h2>Our hot and cold noodle dishes are healthy and packed full of flavor. Try one today!</h2></div>
-            </div>
-            <div class="rightGridItem">
-              <div class="miniBackground"></div>
-              <div class="miniBottomText"><h2>Our donburi choices are reminiscent of tasty home-cooked meals.
-
-</h2></div>
-            </div>
-
         </div>
-      </div>
-      <div id="sushiAla"></div>
-      <div id="contactUs"></div>
+        <div id="contactUs"></div>
     </div>
     <script src="./js/app.js"></script>
 </body>

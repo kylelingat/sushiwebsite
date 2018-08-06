@@ -62,13 +62,13 @@ body {
 
 #gridContainer {
   display: grid;
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 120px;
   height: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 25% 25% 25% 25%;
-  grid-gap: 70px;
+  grid-gap: 200px;
 }
 
 #mainContainerBackground {
@@ -80,16 +80,21 @@ body {
   background-size: cover;
 }
 
-#mainText, #menuText {
+#mainContainerStretch, #menuStretch, #sushiStretch {
+  width: 90%;
+  margin: auto;
+}
+
+#mainText, #menuText, #sushiText {
   margin-top: 70px;
   text-align: center;
 }
 
-#mainText span {
+#mainText span, #sushiText span {
   color: black;
 }
 
-#mainText h1, #menu h1 {
+#mainText h1, #menu h1, #sushiText h1 {
   color: #bf6900;
   font-family: 'Lato';
   font-weight: 900;
@@ -98,7 +103,7 @@ body {
   text-transform: uppercase;
 }
 
-#mainText h2, #menu h2 {
+#mainText h2, #menu h2, #sushiText h2, .rightGridItem h2 {
   font-family: 'Lato';
   font-weight: 500;
   letter-spacing: 3px;
@@ -142,6 +147,7 @@ body {
   font-size:  12px;
   font-family: 'Raleway';
   letter-spacing: 3px;
+  /* text-align:  center; */
 }
 
 #menuBackground {
@@ -199,7 +205,7 @@ body {
 
 .accordion:after {
     content: '\002B';
-    color: #777;
+    color: #bf6900;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -217,19 +223,75 @@ body {
     transition: max-height 0.2s ease-out;
 }
 
-#menuRightGrid{
+#menuRightGrid, #alaLeftGrid{
   display: grid;
   grid-template-rows: 10%;
-  grid-gap: 30px;
+  grid-gap: 90px;
 }
 
 
 
-.rightGridItem h2 {
-  margin-left: 10px;
-  margin-right: 10px;
+
+
+#sushiAlaBackground {
+  background-image: url("../images/menu.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#alaContainer {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 25% 25%;
+  grid-gap: 70px;
+}
+
+#sushiPicLeft {
+  background-image: url("../images/menu.jpg");
+  height: 300px;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+#sushiPicRight {
+  background-image: url("../images/menu.jpg");
+  height: 300px;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+#alaRight h1, #menuAccordion h1 {
+  background-color: red;
+text-align: center;
+color: white;
+font-family: 'Lato';
+font-size: 30px;
+font-weight: 900;
+text-transform: uppercase;
+}
+
+#alaRight ul {
+  list-style-type: none;
   color: #444;
+  font-family: 'Lato';
+  font-size: 30px;
+  font-weight: 900;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
 }
+
+#alaRight li {
+    border-bottom: 1px solid #bf6900;
+    padding: 18px;
+  }
 
 @media screen and (min-width: 1366px) {
 
@@ -267,11 +329,15 @@ body {
 }
 
 @media(max-width: 1366px){
+
+  #gridContainer {
+    width: 100%;
+  }
   #miniContainer {
     grid-template-columns: 1fr;
   }
 
-  #menuGrid {
+  #menuGrid, #alaContainer {
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr;
