@@ -37,12 +37,18 @@ $("#homeButton").click(function() {
 
 $("#menuButton").click(function() {
     $('html, body').animate({
-        scrollTop: $("#menuBackground").offset().top
+        scrollTop: $("#a").offset().top
     }, 1000);
 });
 
 $("#sushiButton").click(function() {
     $('html, body').animate({
-        scrollTop: $("#sushiAlaBackground").offset().top
+        scrollTop: $("#b").offset().top
+    }, 1000);
+});
+
+$("#contactUsButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#c").offset().top
     }, 1000);
 });
