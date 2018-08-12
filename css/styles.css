@@ -195,7 +195,7 @@ body {
     border: none;
     text-align: left;
     outline: none;
-    border-bottom: 1px solid #bf6900;
+    border-bottom: 3px solid #bf6900;
     transition: 0.4s;
 }
 
@@ -309,17 +309,62 @@ text-transform: uppercase;
   }
 
   #contactUsStretch {
-    background-color: blue;
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 
   #contactUsStretch h1 {
     color: white;
   font-family: 'Lato';
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+  #contactUsStretch h2 {
+    color: #FCD116;
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  #contactUsStretch i {
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+  }
+
+  #contactUsStretch p {
+    font-size: 40px;
+    color: white;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  }
+
+  #mainContact {
+    width: 75%;
+    margin: auto;
+  }
+
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:focus { text-decoration: none; }
+  a:hover, a:active { text-decoration: none; }
+
+  .panel p{
+    display: inline;
+    color: #444;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: 500;
+  }
+  .panel p:nth-child(1) {
+    float: left;
+  }
+  .panel p:nth-child(2) {
+    float: right;
   }
 
 @media screen and (min-width: 1366px) {
@@ -372,6 +417,14 @@ text-transform: uppercase;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 70px;
+  }
+
+  #contactUsStretch {
+    width: 95%;
+  }
+
+  #mainContact {
+    width: 90%;
   }
 }
 
