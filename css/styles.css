@@ -367,7 +367,7 @@ text-transform: uppercase;
     float: right;
   }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1024px) {
 
   .navbar {
     display: flex;
@@ -402,7 +402,7 @@ text-transform: uppercase;
 
 }
 
-@media(max-width: 1366px){
+@media(max-width: 1024px){
 
   #gridContainer {
     width: 100%;
@@ -428,7 +428,7 @@ text-transform: uppercase;
   }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1024px) {
     #mainContainerBackground, #menuBackground {
         background-attachment: scroll;
     }
